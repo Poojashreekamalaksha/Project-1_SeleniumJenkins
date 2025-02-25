@@ -3,7 +3,7 @@
 ## Project Overview
 This project automates test scenarios for the https://katalon-demo-cura.herokuapp.com/. It follows the **Page Object Model (POM)**, integrates with **TestNG**, and generates **Allure Reports**.
 
-## Tech Stack
+### Tech Stack
 -Selenium WebDriver
 -TestNG 
 -Java
@@ -13,7 +13,7 @@ This project automates test scenarios for the https://katalon-demo-cura.herokuap
 -Page Object Model (POM)
 -Data-Driven Testing
 
-## Features Automated
+###Features Automated
 -Login with valid credentials
 -Login with invalid credentials
 -Book an appointment
