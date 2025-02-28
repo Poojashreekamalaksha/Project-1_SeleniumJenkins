@@ -58,7 +58,7 @@ public class CuraTest extends BaseTest {
 
         new AppointmentPage().bookAppointment();
 
-
+//
         new LogoutPage().logOutPage();
 
     }
