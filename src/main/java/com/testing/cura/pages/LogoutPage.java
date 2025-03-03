@@ -11,6 +11,7 @@ public class LogoutPage extends BasePage {
     By logout=By.linkText("Logout");
     public void logOutPage()
     {
+        custom_waits();
         clickElement(menu);
        clickElement(logout);
     }

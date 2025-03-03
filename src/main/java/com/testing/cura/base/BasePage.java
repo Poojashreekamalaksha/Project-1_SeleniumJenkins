@@ -3,6 +3,8 @@ package com.testing.cura.base;
 import com.testing.cura.driver.DriverMangerTL;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
@@ -37,5 +39,13 @@ public class BasePage {
             throw new RuntimeException(e);
         }
     }
+
+    public WebElement visibilityOfElementLocated(By key) {
+        WebDriverWait wait = new WebDriverWait(DriverMangerTL.getDriver(), Duration.ofSeconds(10));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(key)); // Pass key directly
+    }
+
+
+
 
 }

@@ -10,7 +10,8 @@ public class AppointmentPage extends BasePage {
         super();
     }
 
-    By facility = By.id("combo_facility");
+    By facility = By.xpath("//select[@id='combo_facility']");
+
     By readmission = By.id("chk_hospotal_readmission");
     By healthcareProgram = By.xpath("(//label[@class='radio-inline'])[3]");
     By visitDate = By.id("txt_visit_date");
@@ -18,9 +19,11 @@ public class AppointmentPage extends BasePage {
     By bookAppointment = By.id("btn-book-appointment");
 
     public void bookAppointment() {
-
+        visibilityOfElementLocated(facility);
         Select select = new Select(getElement(facility));
-        select.selectByVisibleText(PropertyReader.readKey("facilityName"));
+
+        select.selectByValue(PropertyReader.readKey("facilityName"));
+        custom_waits();
         clickElement(readmission);
         clickElement(healthcareProgram);
         enterInput(visitDate, PropertyReader.readKey("visitDate"));
@@ -30,4 +33,5 @@ public class AppointmentPage extends BasePage {
     public ConfirmationPage afterAppointment () {
         return new ConfirmationPage();
     }
+
 }
