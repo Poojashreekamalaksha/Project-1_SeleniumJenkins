@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DriverManager {
 
-    static WebDriver driver;
+    private static WebDriver driver;
 
 
     public static void init() {
