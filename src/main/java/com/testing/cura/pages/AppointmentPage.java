@@ -12,11 +12,11 @@ public class AppointmentPage extends BasePage {
 
     By facility = By.xpath("//select[@id='combo_facility']");
 
-    By readmission = By.id("chk_hospotal_readmission");
-    By healthcareProgram = By.xpath("(//label[@class='radio-inline'])[3]");
-    By visitDate = By.id("txt_visit_date");
-    By comment = By.id("txt_comment");
-    By bookAppointment = By.id("btn-book-appointment");
+    private By readmission = By.id("chk_hospotal_readmission");
+    private By healthcareProgram = By.xpath("(//label[@class='radio-inline'])[3]");
+    private By visitDate = By.id("txt_visit_date");
+    private By comment = By.id("txt_comment");
+    private By bookAppointment = By.id("btn-book-appointment");
 
     public void bookAppointment() {
         visibilityOfElementLocated(facility);

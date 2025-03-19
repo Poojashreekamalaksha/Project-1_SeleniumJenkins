@@ -7,8 +7,8 @@ public class LogoutPage extends BasePage {
     public LogoutPage() {
         super();
     }
-    By menu = By.id("menu-toggle");
-    By logout=By.linkText("Logout");
+    private By menu = By.id("menu-toggle");
+    private By logout=By.linkText("Logout");
     public void logOutPage()
     {
         custom_waits();

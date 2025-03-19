@@ -10,10 +10,10 @@ public class LoginPage extends BasePage {
         super();
     }
 
-    By makeappointment = By.id("btn-make-appointment");
-    By username = By.id("txt-username");
-    By password = By.id("txt-password");
-    By login = By.id("btn-login");
+    private By makeappointment = By.id("btn-make-appointment");
+    private By username = By.id("txt-username");
+    private By password = By.id("txt-password");
+    private By login = By.id("btn-login");
 
     By invalidMessage = By.xpath("//p[@class='lead text-danger']");
     public LoginPage validLoginCura() {
